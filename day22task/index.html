@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <script>
+         let countdown =new Promise(function (resolve,reject){
+             resolve("resolved");
+         });
+         countdown
+           .then(function countTen(){
+             
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">10 </div>`;
+               },2000);
+              
+           })
+           .then(function countnine(){
+              
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">9 </div>`;
+               },4000);
+           })
+           .then(function counteight(){
+               
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">8 </div>`;
+               },6000);
+           })
+           .then(function countseven(){
+              
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">7 </div>`;
+               },8000);
+           })
+
+           .then(function countsix(){
+              
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">6 </div>`;
+               },10000);
+           })
+           .then(function countsix(){
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">5 </div>`;
+               },12000);
+           })
+           .then(function countsix(){
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">4</div>`;
+               },14000);
+           })
+           .then(function countsix(){
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">3</div>`;
+               },16000);
+           })
+           .then(function countsix(){
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">2</div>`;
+               },18000);
+           })
+           .then(function countsix(){
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">1 </div>`;
+               },20000);
+           })
+           .then(function countsix(resulr){
+               setTimeout(()=>{
+                document.getElementById("background").innerHTML=`<div class="ten">HAPPY INDEPENDENCE DAY!!!</div>`;
+               },22000);
+           })
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
